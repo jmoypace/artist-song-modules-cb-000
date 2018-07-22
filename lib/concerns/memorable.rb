@@ -9,5 +9,5 @@ module ClassMethods
   end
 
 
-
+end
 end
