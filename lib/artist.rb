@@ -7,8 +7,6 @@ extend Memorable::ClassMethods
 extend Findable::ClassMethods
   @@artists = []
 
-
-
   def initialize
     @@artists << self
     @songs = []
@@ -18,10 +16,6 @@ extend Findable::ClassMethods
     @@artists
   end
 
-
-
-
-
   def add_song(song)
     @songs << song
     song.artist = self
@@ -30,7 +24,5 @@ extend Findable::ClassMethods
   def add_songs(songs)
     songs.each { |song| add_song(song) }
   end
-
-
 
 end
