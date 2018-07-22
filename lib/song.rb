@@ -9,7 +9,7 @@ include Paramable::InstanceMethods
   @@songs = []
 
   def initialize
-    @@songs << self
+    self.class.all << self
   end
 
   def artist=(artist)
